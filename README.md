@@ -1,7 +1,7 @@
 .net Utility Library
 ====================
 
-Just some Misc. Utilities that I wrote over time.
+A port of mstum/mstum.utils for use with Cosmos.
 
 Circular Buffer
 ---------------
