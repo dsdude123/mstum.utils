@@ -26,6 +26,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Numerics;
+using static mstum.utils.cosmos.Plugs;
 
 namespace mstum.utils.cosmos
 {
@@ -44,7 +45,8 @@ namespace mstum.utils.cosmos
         /// <returns></returns>
         public static BigInteger Decode(string input)
         {
-            var reversed = input.ToLower().Reverse();
+            var reversed = input.ToLower();
+            reversed = CosmosReverse(reversed);
             BigInteger result = BigInteger.Zero;
             int pos = 0;
             foreach (char c in reversed)

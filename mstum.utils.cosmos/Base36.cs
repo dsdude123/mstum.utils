@@ -23,7 +23,7 @@
 #endregion
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using static mstum.utils.cosmos.Plugs;
 
 namespace mstum.utils.cosmos
 {
@@ -64,7 +64,8 @@ namespace mstum.utils.cosmos
         /// <returns></returns>
         public static Int64 Decode(string input)
         {
-            var reversed = input.ToLower().Reverse();
+            var reversed = input.ToLower();
+            reversed = CosmosReverse(reversed);
             long result = 0;
             int pos = 0;
             foreach (char c in reversed)
@@ -74,5 +75,7 @@ namespace mstum.utils.cosmos
             }
             return result;
         }
+
+       
     }
 }
