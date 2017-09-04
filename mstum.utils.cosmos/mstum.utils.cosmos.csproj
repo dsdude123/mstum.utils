@@ -6,7 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Kernel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="mstum.utils.cosmosBoot.Cosmos" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Kernel.cs" />
   </ItemGroup>
   
   <ItemGroup>
